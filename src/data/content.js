@@ -31,7 +31,7 @@ export const projects = [
     type: 'Projet personnel',
     description:
       "Application mobile permettant de mettre en relation conducteurs et passagers étudiants pour organiser des trajets partagés.",
-    tags: ['Flutter', 'Dart'],
+    tags: ['Flutter', 'Dart', 'Firebase'],
     link: '',
     repo: 'https://github.com/tinasoady/First_appmobil',
   },
