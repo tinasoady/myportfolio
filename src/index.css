@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, monospace;
+  --color-bg: #080a09;
+  --color-surface: #0f1411;
+  --color-surface-2: #151b17;
+  --color-border: #26332b;
+  --color-text: #e2ede4;
+  --color-muted: #7f9186;
+  --color-accent: #4ade80;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(74, 222, 128, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(74, 222, 128, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
