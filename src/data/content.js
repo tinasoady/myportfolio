@@ -33,7 +33,7 @@ export const projects = [
       "Application mobile permettant de mettre en relation conducteurs et passagers étudiants pour organiser des trajets partagés.",
     tags: ['Flutter', 'Dart'],
     link: '',
-    repo: 'https://github.com/tinasoady/gostudy-app',
+    repo: 'https://github.com/tinasoady/First_appmobil',
   },
   {
     title: 'Gestionnaire de tâches',
@@ -42,7 +42,7 @@ export const projects = [
       'Application web de gestion de tâches (création, suivi, organisation) construite pour pratiquer React et la gestion d\'état côté front-end.',
     tags: ['React', 'JavaScript'],
     link: '',
-    repo: 'https://github.com/tinasoady/todolist-REACT',
+    repo: 'https://github.com/tinasoady/framwork_group_javascript-GInfo3/tree/tnsd',
   },
   {
     title: 'Portfolio personnel',
