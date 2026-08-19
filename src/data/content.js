@@ -1,16 +1,17 @@
 // Centralise tout le contenu du portfolio ici.
 // Remplace les valeurs par les tiennes (nom, liens, description...).
 
-
 export const profile = {
-  name: 'Tinasoady Judès edi',
+  name: 'Tinasoady Judès Edinand',
   role: 'Étudiant en Génie Informatique (L3)',
   tagline: "Je conçois des applications web et mobiles, du back-end à l'interface.",
   bio: "Étudiant en L3 Génie Informatique, passionné par le monde de l'informatique. J'aime construire des systèmes complets — de l'architecture back-end aux interfaces utilisateur — et j'apprends actuellement en stage à moderniser un système de gestion cloud.",
   location: 'Madagascar',
   email: 'jtinasoady@gmail.com',
   github: 'https://github.com/tinasoady',
-  linkedin: 'https://linkedin.com/in/ton-profil',
+  // Laisse vide tant que tu n'as pas d'URL LinkedIn réelle : l'icône ne s'affiche
+  // pas si ce champ est vide, pour éviter un lien mort. Remplis-le dès que tu as un profil.
+  linkedin: '',
   // Place ton CV en PDF dans le dossier public/ (ex: public/cv.pdf) puis mets le chemin ici.
   cvUrl: '/cv.pdf',
 }
@@ -20,19 +21,19 @@ export const projects = [
     title: "Système cloud de gestion d'inscriptions — IUGM",
     type: 'Stage en cours',
     description:
-      "Modernisation d'un système de gestion des inscriptions pour l'IUGM : migration vers une architecture cloud, conteneurisation et mise en place d'un pipeline d'intégration et de déploiement continu.",
+      "Modernisation cloud d'un système de gestion des inscriptions universitaires pour l'IUGM (l'institut où j'effectue mon stage) : migration vers une architecture cloud, conteneurisation et mise en place d'un pipeline d'intégration et de déploiement continu.",
     tags: ['Next.js', 'Prisma', 'PostgreSQL', 'Docker', 'GitHub Actions', 'CI/CD'],
-    link: '',
-    repo: '',
+    link: 'https://iugm-portail.vercel.app',
+    repo: 'https://github.com/tinasoady/iugm-portail',
   },
   {
-    title: 'Application mobile de covoiturage',
+    title: 'GoStudy — Application mobile de covoiturage étudiant',
     type: 'Projet personnel',
     description:
-      "Application mobile permettant de mettre en relation conducteurs et passagers pour organiser des trajets partagés.",
+      "Application mobile permettant de mettre en relation conducteurs et passagers étudiants pour organiser des trajets partagés.",
     tags: ['Flutter', 'Dart'],
     link: '',
-    repo: '',
+    repo: 'https://github.com/tinasoady/gostudy-app',
   },
   {
     title: 'Gestionnaire de tâches',
@@ -41,7 +42,7 @@ export const projects = [
       'Application web de gestion de tâches (création, suivi, organisation) construite pour pratiquer React et la gestion d\'état côté front-end.',
     tags: ['React', 'JavaScript'],
     link: '',
-    repo: '',
+    repo: 'https://github.com/tinasoady/todolist-REACT',
   },
   {
     title: 'Portfolio personnel',
@@ -50,23 +51,23 @@ export const projects = [
       "Mon portfolio personnel, construit pour présenter mes projets et compétences. Il est développé avec React et Tailwind CSS.",
     tags: ['React', 'Tailwind CSS'],
     link: '',
-    repo: '',
+    repo: 'https://github.com/tinasoady/myportfolio',
   },
   {
-    title: 'cripto-service',
+    title: 'Cripto-service',
     type: 'Projet en groupe (études)',
     description:
-      "programme python qui permet de crypter et décrypter des fichiers en utilisant des algorithmes de chiffrement symétrique et asymétrique.",
+      "Programme Python qui permet de crypter et décrypter des fichiers en utilisant des algorithmes de chiffrement symétrique et asymétrique.",
     tags: ['Python'],
     link: '',
-    repo: '', 
-  }
+    repo: 'https://github.com/tinasoady/cripto_service',
+  },
 ]
 
 export const skillGroups = [
   {
     label: 'Langages',
-    items: ['JavaScript', 'Python', 'C++', 'Dart', 'SQL', 'HTML', 'CSS', 'TypeScript','php'],
+    items: ['JavaScript', 'Python', 'C++', 'Dart', 'SQL', 'HTML', 'CSS', 'TypeScript', 'PHP'],
   },
   {
     label: 'Front-end',

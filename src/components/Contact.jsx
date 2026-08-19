@@ -38,15 +38,17 @@ export default function Contact() {
           >
             <GithubIcon size={18} /> GitHub
           </motion.a>
-          <motion.a
-            href={profile.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            whileHover={{ y: -2, color: 'var(--color-text)' }}
-            className="flex items-center gap-2"
-          >
-            <LinkedinIcon size={18} /> LinkedIn
-          </motion.a>
+          {profile.linkedin && (
+            <motion.a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              whileHover={{ y: -2, color: 'var(--color-text)' }}
+              className="flex items-center gap-2"
+            >
+              <LinkedinIcon size={18} /> LinkedIn
+            </motion.a>
+          )}
           <motion.a
             href={`mailto:${profile.email}`}
             whileHover={{ y: -2, color: 'var(--color-text)' }}

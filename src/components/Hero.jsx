@@ -78,16 +78,18 @@ export default function Hero() {
         >
           <GithubIcon size={20} />
         </motion.a>
-        <motion.a
-          href={profile.linkedin}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="LinkedIn"
-          whileHover={{ scale: 1.15, y: -2, color: 'var(--color-text)' }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <LinkedinIcon size={20} />
-        </motion.a>
+        {profile.linkedin && (
+          <motion.a
+            href={profile.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            whileHover={{ scale: 1.15, y: -2, color: 'var(--color-text)' }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <LinkedinIcon size={20} />
+          </motion.a>
+        )}
         <motion.a
           href={`mailto:${profile.email}`}
           aria-label="Email"
